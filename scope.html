@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function scope</title>
+</head>
+
+<body>
+    <script>
+
+        var a = 10;
+        function foo() {
+            a = 20;
+            console.log(a);
+            console.log(window.a);
+
+        }
+        console.log(a);
+        // foo();
+        window.foo();
+    </script>
+</body>
+
+</html>
